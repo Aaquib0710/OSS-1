@@ -12,12 +12,12 @@ namespace WebApp.Controllers
 
         //Action methods 
         // GET: Home
-        public ActionResult Index(
+        public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult
+        public ActionResult Aboutus()
         {
 
 
@@ -30,6 +30,8 @@ namespace WebApp.Controllers
             BankingServiceReference.IService1 bankingService = new BankingServiceReference.Service1Client();
             BankingServiceReference.Account acct = bankingService.GetAccountDetails("456");
              ViewBag.AccountHolder = acct.Name;
+             
+             //hello bro Aaquib here
 
 
 
